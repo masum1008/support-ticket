@@ -118,7 +118,7 @@ class SettingsTableSeeder extends Seeder
             'email.facebook_link'    => '#', // Toogle icon link: false or string
             'email.twitter_link'     => '#', // Toogle icon link: false or string
             'email.footer'           => 'Powered by Ticketit',
-            'email.footer_link'      => 'https://github.com/thekordy/ticketit',
+            'email.footer_link'      => '',
             'email.color_body_bg'    => '#FFFFFF',
             'email.color_header_bg'  => '#44B7B7',
             'email.color_content_bg' => '#F46B45',
@@ -252,7 +252,7 @@ class SettingsTableSeeder extends Seeder
              *
              * This setting stores the path to the json config file, relative to project route
              */
-            'summernote_options_json_file' => 'vendor/kordy/ticketit/src/JSON/summernote_init.json',
+            'summernote_options_json_file' => 'vendor/masumbd/ticket/src/JSON/summernote_init.json',
 
             /*
              * Set which html tags are allowed
@@ -276,7 +276,7 @@ class SettingsTableSeeder extends Seeder
              *
              * Default: __DIR__.'/routes.php'
              */
-            'routes' => base_path('vendor/kordy/ticketit/src').'/routes.php',
+            'routes' => base_path('vendor/masumbd/ticket/src').'/routes.php',
 
         ];
     }
