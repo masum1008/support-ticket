@@ -22,7 +22,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Masumbd\\Ticket\\": "src"
+            "Kordy\\Ticketit\\": "src"
         }
     }
 }
