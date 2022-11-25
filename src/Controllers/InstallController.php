@@ -28,7 +28,7 @@ class InstallController extends Controller
     public function publicAssets()
     {
         $public = $this->allFilesList(public_path('vendor/ticketit'));
-        $assets = $this->allFilesList(base_path('vendor/kordy/ticketit/src/Public'));
+        $assets = $this->allFilesList(base_path('vendor/masumbd/ticket/src/Public'));
         if ($public !== $assets) {
             Artisan::call('vendor:publish', [
                 '--provider' => 'Kordy\\Ticketit\\TicketitServiceProvider',
@@ -59,7 +59,6 @@ class InstallController extends Controller
 
             return view('ticketit::install.index', compact('views_files_list', 'inactive_migrations', 'users_list'));
         }
-
         // other than that, Upgrade to a new version, installing new migrations and new settings slugs
         if (Agent::isAdmin()) {
             $inactive_migrations = $this->inactiveMigrations();
